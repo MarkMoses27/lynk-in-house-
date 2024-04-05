@@ -1,0 +1,78 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+
+.welcome-content {
+  flex: 1;
+  padding: 10%;
+}
+
+.welcome-heading {
+  font-size: 16px;
+  font-family: "Euphoria Script", cursive;
+  margin-bottom: 10px;
+  color: var(--red-color);
+}
+
+.welcome-text {
+  font-size: 3rem;
+  letter-spacing: -1px;
+  word-spacing: -2px;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.netyite-button,
+.sglex-button {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for smoother color change */
+}
+
+.netyite-button {
+  background-color: var(--primary-color);
+}
+
+/* Animation for buttons */
+.netyite-button:hover,
+.sglex-button:hover {
+  transform: translateY(-3px); /* Move button 3px upwards on hover */
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .welcome-content {
+    padding: 5%;
+  }
+
+  .welcome-text {
+    font-size: 2rem;
+  }
+
+  .netyite-button,
+  .sglex-button {
+    padding: 8px 16px;
+  }
+}
+
+.welcome-image {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}

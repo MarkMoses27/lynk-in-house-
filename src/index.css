@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+
+:root {
+    --primary-color: #342E59;
+    --secondary-color: #F2C4D0;
+    --text-color: #696969;
+    --accent-color: #02010100;
+    --yellow-color: #FFC700;
+    --light-yellow:#FFF455;
+    --black-color: #000000;
+    --grey-color: #F2F2F2;
+    --white-color: #FFFFFF;
+    --red-color:#ff4800;
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);  
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Set cursor style for buttons */
+button {
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 15px 30px;
+    border: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--yellow-color);
+    }
+button a{
+    color: var(--white-color);
+
+}
+
+
+
+
+.container{
+    max-width: 1200px;
+    padding: 10%;
+}

@@ -1,0 +1,35 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding:1rem 2rem;
+}
+
+.logo{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    margin-right: 1.5rem;
+
+}
+
+ul li a{
+    color: var(--white-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease
+}
+
+ul li a:hover{
+    color: var(--yellow-color);
+}
+
