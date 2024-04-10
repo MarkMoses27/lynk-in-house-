@@ -1,0 +1,64 @@
+.location-coverage {
+    margin-top: 40px;
+    padding: 0 15%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center; /* Center-align the title */
+  }
+
+  .title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    margin: 0 auto;
+    background-color: var(--red-color);
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    color: var(--text-color);
+    text-align: center; /* Center-align the subtitle */
+  }
+  
+  .coverage-table {
+    width: calc(100% - 40px); /* Adjust width to accommodate padding */
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table-header {
+    display: flex;
+    background-color: var(--secondary-color);
+    color: var(--black-color);
+  }
+  
+  .header-cell {
+    flex: 1;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .table-row {
+    display: flex;
+  }
+  
+  .table-row > div {
+    flex: 1;
+    padding: 10px;
+    border-top: 1px solid var(--text-color);
+    color: var(--text-color);
+  }
+  
+  .table-row:nth-child(even) {
+    background-color: var(--grey-color);
+  }
+  

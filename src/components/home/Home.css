@@ -42,7 +42,6 @@
   background-color: var(--primary-color);
 }
 
-/* Animation for buttons */
 .netyite-button:hover,
 .sglex-button:hover {
   transform: translateY(-3px); /* Move button 3px upwards on hover */

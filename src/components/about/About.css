@@ -1,0 +1,134 @@
+.about-container {
+  background-color: var(--grey-color);
+  padding: 20px;
+}
+
+.home-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home-content h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.home-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 16px;
+  line-height: 5px;
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  gap: 20px;
+}
+.about-us-btn,
+.call-btn {
+  position: relative;
+  font-size: 16px;
+  padding: 10px 40px 10px 20px; /* Adjust padding for both buttons */
+  background-color: var(--primary-color); /* Set background color for about-us-btn */
+  border: none;
+  border-radius: 30px; /* Set border radius for both buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.about-us-btn{
+  color: var(--white-color); /* Set text color for both buttons */
+
+}
+
+.call-btn{
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+
+
+.about-us-btn::after,
+.call-btn::after {
+  content: '→'; /* Unicode arrow character */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.call-btn {
+  background-color: transparent; /* Set background color for call-btn */
+  border: 2px solid var(--primary-color); /* Set border for call-btn */
+}
+
+.about-us-btn:hover,
+.call-btn:hover {
+  background-color: var(--black-color); /* Change background color on hover */
+  color: var(--white-color); /* Change text color on hover */
+}
+
+
+
+@keyframes bgHover {
+  0% {
+    background-color: var(--primary-color);
+  }
+  100% {
+    background-color: var(--black-color);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .home-content h1 {
+    font-size: 24px;
+  }
+  
+  .home-content h2 {
+    font-size: 18px;
+  }
+  
+  .home-content p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .about-btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-us-btn,
+  .call-btn {
+    font-size: 14px;
+    padding: 8px 30px 8px 10px;
+  }
+
+  .about-us-btn::after,
+  .call-btn::after {
+    right: 5px;
+  }
+
+  .call-btn {
+    margin-top: 10px;
+  }
+  
+  
+}

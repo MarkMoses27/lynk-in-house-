@@ -15,15 +15,23 @@
     --red-color:#ff4800;
 }
 
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--text-color) var(--grey-color);
+    scrollbar-width: medium;
+    
+}
+
+
+
 body {
-    background-color: var(--primary-color);  
+    background-color: var(--grey-color);  
 }
 
 ul {
@@ -40,10 +48,9 @@ button {
     border-radius: 25px;
     padding: 15px 30px;
     border: none;
-    font-family: "Oswald", sans-serif;
     font-size: 16px;
-    font-weight: bold;
-    background-color: var(--yellow-color);
+    font-weight: 400;
+    background-color: var(--red-color);
     }
 button a{
     color: var(--white-color);

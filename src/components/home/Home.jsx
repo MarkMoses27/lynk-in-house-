@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-import HOME_IMAGE from './../../assets/cta.svg';
+import HOME_IMAGE from './../../assets/home2.svg';
 import './Home.css';
 const Home = () => {
     return (
+      <>
       <div className="home-container">
         <div className="welcome-content">
           <h1 className="welcome-heading">Welcome to Lynk Nails</h1>
@@ -18,6 +19,7 @@ const Home = () => {
           <img className="home-image" src={HOME_IMAGE} alt="Welcome"/>
         </div>
       </div>
+      </>
     )
 }
 
